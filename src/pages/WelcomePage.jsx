@@ -4,20 +4,20 @@ import { Button } from '../components/ui/button';
 import { Footer } from '../components/Footer';
 
 export function WelcomePage() {
-  // const features = [
-  //   {
-  //     icon: Utensils,
-  //     title: 'Freshly Prepared',
-  //   },
-  //   {
-  //     icon: Heart,
-  //     title: 'Support Local Business',
-  //   },
-  //   {
-  //     icon: Truck,
-  //     title: 'Fast & Reliable Delivery',
-  //   },
-  // ];
+  const features = [
+    {
+      icon: Utensils,
+      title: 'Freshly Prepared',
+    },
+    {
+      icon: Heart,
+      title: 'Support Local Business',
+    },
+    {
+      icon: Truck,
+      title: 'Fast & Reliable Delivery',
+    },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -50,7 +50,7 @@ export function WelcomePage() {
                 </Link>
               </div>
             </nav>
-            <div className="w-full ml-auto mr-auto flex-col justify-start align-center mt-20">
+            <div className="w-full h-auto ml-auto mr-auto flex-col justify-start align-center mt-20">
               <h1 className="text-3xl sm:text-4xl lg:text-4xl text-start font-bold text-gray-900 leading-tight">
                 Your Authentic Taste of Nigeria
               </h1>
@@ -59,7 +59,7 @@ export function WelcomePage() {
               </p>
 
               {/* Features */}
-              {/* <div className="mt-8 space-y-4 lg:grid lg:grid-cols-2">
+              <div className="mt-8 space-y-4 lg:grid lg:grid-cols-2">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
@@ -68,34 +68,6 @@ export function WelcomePage() {
                     <span className="text-gray-700 font-medium">{feature.title}</span>
                   </div>
                 ))}
-              </div> */}
-              <div className="space-y-4 mt-8 lg:grid lg:grid-cols-2 lg:gap-x-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
-                    <Utensils className="w-6 h-6 text-orange-500" />
-                  </div>
-                  <span className="text-gray-900 font-medium text-base lg:text-md">
-                    Freshly Prepared
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
-                    <Utensils className="w-6 h-6 text-orange-500" />
-                  </div>
-                  <span className="text-gray-900 font-medium text-base lg:text-md">
-                    Support Local Business
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
-                    <Truck className="w-6 h-6 text-orange-500" />
-                  </div>
-                  <span className="text-gray-900 font-medium text-base lg:text-md">
-                    Fast & Reliable Delivery
-                  </span>
-                </div>
               </div>
 
               {/* CTA Buttons */}
@@ -115,7 +87,7 @@ export function WelcomePage() {
                 </Link>
               </div>
 
-              <div className="mt-20 pt-8  flex flex-col md:flex-row items-end justify-center gap-6">
+              <div className="mt-20 pt-8  flex flex-col md:flex-row sm:flex-row items-center justify-center gap-6">
                 <p className="text-gray-800 text-md text-center md:text-left">
                   © 2024 Chuks Kitchen.
                 </p>

@@ -15,7 +15,7 @@ export function FoodDetailsPage() {
   const navigate = useNavigate();
   const { addToCart } = useCart();
 
-  // ✅ FIXED: Safe ID matching (handles string/number mismatch)
+  // Safe ID matching (handles string/number mismatch)
   const food = useMemo(() => {
     if (!id) return null;
     return foodItems.find(
